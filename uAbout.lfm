@@ -1,0 +1,77 @@
+object AboutBox: TAboutBox
+  Left = 200
+  Top = 80
+  BorderStyle = bsDialog
+  Caption = 'Sobre o programa'
+  ClientHeight = 318
+  ClientWidth = 288
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  Position = poScreenCenter
+  PixelsPerInch = 96
+  object Panel1: TPanel
+    Left = 8
+    Top = 16
+    Width = 273
+    Height = 249
+    BevelInner = bvRaised
+    BevelOuter = bvLowered
+    ParentColor = True
+    TabOrder = 0
+    object ProductName: TLabel
+      Left = 14
+      Top = 6
+      Width = 241
+      Height = 52
+      Alignment = taCenter
+      Caption = 'NEANDER/X - Simulador de uma CPU didática hipotética com arquitetura baseada em uso de acumulador.'
+      WordWrap = True
+    end
+    object Version: TLabel
+      Left = 62
+      Top = 62
+      Width = 129
+      Height = 13
+      Caption = 'Versão 1.3 - Agosto/2003'
+    end
+    object Copyright: TLabel
+      Left = 78
+      Top = 102
+      Width = 89
+      Height = 17
+      AutoSize = False
+      Caption = 'Copyright (C) 2003  '
+    end
+    object Comments: TLabel
+      Left = 6
+      Top = 118
+      Width = 257
+      Height = 26
+      Caption = 'Profs. José Antonio Borges e Gabriel Pereira da Silva.'
+      WordWrap = True
+    end
+    object Label2: TLabel
+      Left = 6
+      Top = 158
+      Width = 262
+      Height = 73
+      Caption = 'Este simulador é compatível com o processador Neander apresentado no livro  "Fundamentos de  Arquitetura de Computadores" de Raul F. Weber, 2ed., Ed. Sagra-Luzzatto. É possível a sua livre utilização desde que respeitados os direitos autorais.'
+      WordWrap = True
+    end
+  end
+  object OKButton: TButton
+    Left = 111
+    Top = 276
+    Width = 75
+    Height = 25
+    Caption = 'OK'
+    Default = True
+    ModalResult = 1
+    TabOrder = 1
+    OnClick = OKButtonClick
+  end
+end

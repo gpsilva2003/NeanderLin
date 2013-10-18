@@ -1,0 +1,40 @@
+object formAssembler: TformAssembler
+  Left = 181
+  Top = 107
+  Width = 545
+  Height = 380
+  Caption = 'Assembler - sa'#237'da da compila'#231#227'o'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  FormStyle = fsStayOnTop
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  object listagem: TMemo
+    Left = 0
+    Top = 24
+    Width = 537
+    Height = 329
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Courier New'
+    Font.Style = []
+    ParentFont = False
+    ScrollBars = ssBoth
+    TabOrder = 0
+  end
+  object b_clipboard: TButton
+    Left = 0
+    Top = 0
+    Width = 129
+    Height = 25
+    Caption = 'Copiar para o Clipboard'
+    TabOrder = 1
+    OnClick = b_clipboardClick
+  end
+end
